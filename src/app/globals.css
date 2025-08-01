@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+:root {
+  --primary: #0e46af;
+  --secondary: #ecf2fe;
+  --primaryhover: #265ec9;
+  --secondaryhover: #cce0ff;
+  --white: #ffffff;
+  --black: #000000;
+}
