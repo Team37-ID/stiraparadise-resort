@@ -14,8 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Stira ParADIse Resort",
-  description:
-    "Stira ParADIse Resort adalah glamping resort yang berada di pantai alfath stira paradise Makassar, Sulawesi Selatan.",
+  description: "Stira ParADIse Resort adalah glamping resort yang berada di pantai alfath stira paradise Makassar, Sulawesi Selatan.",
 };
 
 export default function RootLayout({
@@ -25,11 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
 }
