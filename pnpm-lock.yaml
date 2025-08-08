@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@once-ui-system/core':
-        specifier: ^1.4.12
-        version: 1.4.12(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)(sharp@0.34.3)
+        specifier: ^1.4.16
+        version: 1.4.16(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)(sharp@0.34.3)
       lucide-react:
         specifier: ^0.536.0
         version: 0.536.0(react@19.1.0)
@@ -363,8 +363,8 @@ packages:
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
 
-  '@once-ui-system/core@1.4.12':
-    resolution: {integrity: sha512-Xh2Z8zNVdnXifmgemqdaGuMx0uCyZKvC3+OGaDlf7bAddJgYsZ3bEiNiQtnIt9tBnMlgemfPbFwb4HPazlI4+Q==}
+  '@once-ui-system/core@1.4.16':
+    resolution: {integrity: sha512-S4P8TxQ3W0BnB1vYTMi2DNbZhPKk+yBW4YsUhvFZ0m/kFCmbYl5tPv9mzkttgHSgG9G7UO2RsBNt4dvKHu2Qsg==}
     peerDependencies:
       next: '>=13.4'
       react: '>=18'
@@ -2352,7 +2352,7 @@ snapshots:
 
   '@nolyfill/is-core-module@1.0.39': {}
 
-  '@once-ui-system/core@1.4.12(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)(sharp@0.34.3)':
+  '@once-ui-system/core@1.4.16(next@15.4.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)(sharp@0.34.3)':
     dependencies:
       '@floating-ui/react-dom': 2.1.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
