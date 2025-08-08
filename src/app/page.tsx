@@ -1,7 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
+
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
+import AboutUs from "./components/aboutus";
+import CampGlamArea from "./components/campglampingarea";
+import CottageTropis from "./components/cottagetropisCS";
+import Testimonial from "./components/testimonial";
+import ExperienceAktivitas from "./components/experienceaktivitas";
+import Footer from "./components/footer";
+import PilihanPenginapan from "./components/pilihanpenginapan";
+import Reservasi from "./components/reservasi";
 
 export default function Home() {
   return (
@@ -12,13 +20,29 @@ export default function Home() {
       {/* hero */}
       <Hero />
 
-      <div className="flex flex-col items-center mt-10">
-        <Image src="/stiraparadise-logo.jpeg" alt="stira paradise logo" width={128} height={128} />
-        <p className="w-96 text-center md:text-2xl">Coming Soon Surga Tropis Stira ParADIse Resort</p>
-        <Link href="https://www.instagram.com/stiraparadise_resort" className="underline text-blue-500">
-          Kunjungi Instagram Kami
-        </Link>
-      </div>
+      {/* about us */}
+      <AboutUs />
+
+      {/* Pilihan Fasilitas Penginapan */}
+      <PilihanPenginapan />
+
+      {/* Camp & Glamping Area */}
+      <CampGlamArea />
+
+      {/* Cottage Tropis (Segera Hadir) */}
+      <CottageTropis />
+
+      {/* Experience & Aktivitas */}
+      <ExperienceAktivitas />
+
+      {/* Testimonial */}
+      <Testimonial />
+
+      {/* Reservasi Sekarang */}
+      <Reservasi />
+
+      {/* footer */}
+      <Footer />
     </div>
   );
 }
