@@ -9,3 +9,19 @@
   --white: #ffffff;
   --black: #000000;
 }
+
+/* valid saat user sudah memilih/memasukan inputan, invalid ketika user blm mengisi */
+input::placeholder,
+select:invalid,
+input[type="date"]:invalid,
+input[type="number"]:invalid {
+  color: gray;
+  opacity: 1;
+}
+
+input,
+select:valid,
+input[type="date"]:valid,
+input[type="number"]:valid {
+  color: black;
+}
