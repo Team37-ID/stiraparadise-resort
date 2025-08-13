@@ -6,13 +6,12 @@ const Reservasi = () => {
   const [nama, setNama] = useState("");
   const [checkin, setCheckin] = useState("");
   const [checkout, setCheckout] = useState("");
-
-  //jumlah tamu
+  //state jumlah tamu
   const [value, setValue] = useState<number>(0);
   const handleChange = (newValue: number) => {
     setValue(newValue);
   };
-  // select
+  //state select
   const [selectedRooms, setSelectedRooms] = useState("");
 
   //send ke WA
@@ -23,12 +22,11 @@ Check-in: ${checkin}
 Check-out: ${checkout}
 Tipe Penginapan: ${selectedRooms}
 Jumlah Tamu: ${value}`;
-
     const url = `https://wa.me/6282188661981?text=${encodeURIComponent(pesan)}`;
     window.open(url, "_blank");
   };
 
-  //clear
+  //btn clear
   const handleClear = () => {
     setNama("");
     setCheckin("");
@@ -41,9 +39,9 @@ Jumlah Tamu: ${value}`;
     <div className="text-center items-center" id="reservasi">
       <h2 className="text-lg md:text-xl xl:text-3xl text-[var(--primary)] font-bold mb-8 mt-20 md:mt-20 xl:mt-40">Reservasi Sekarang</h2>
       <p className="text-base md:text-lg xl:text-xl md:mt-4 xl:mt-6">Booking Mudah, Liburan Mewah</p>
-      <div className="py-12">
+      <div className="py-12 max-w-lg xl:max-w-2xl mx-auto">
         {/* form nama  */}
-        <div className="flex items-stretch relative border border-[var(--primary)] rounded-[30px] overflow-hidden transition-all duration-200 w-full xl:pr-155 mb-4">
+        <div className="flex items-stretch relative border border-[var(--primary)] rounded-[30px] overflow-hidden transition-all duration-200 w-full  mb-4">
           <div className="flex items-center pl-4 pr-2">
             <IdCard className="text-[var(--primary)] w-5 h-5" />
           </div>
@@ -51,10 +49,9 @@ Jumlah Tamu: ${value}`;
             <label htmlFor="nama" className="text-sm text-[var(--primary)] font-medium mt-2 ml-3">
               Nama
             </label>
-            <input id="nama" value={nama} onChange={(e) => setNama(e.target.value)} type="text" placeholder="Masukkan Nama Anda" className="w-full p-3 pt-1 pb-2 text-sm focus:outline-none " required />
+            <input id="nama" value={nama} onChange={(e) => setNama(e.target.value)} type="text" placeholder="Masukkan Nama Anda" className="w-full p-3 pt-1 pb-2 text-sm focus:outline-none" required />
           </div>
         </div>
-
         {/* form check in dan checkout */}
         <div className="flex flex-col md:flex-row gap-2">
           <div className="flex items-stretch relative border border-[var(--primary)] rounded-[30px] transition-all duration-200 w-full mb-2 xl:mb-4">
@@ -68,8 +65,7 @@ Jumlah Tamu: ${value}`;
               <input type="date" value={checkin} onChange={(e) => setCheckin(e.target.value)} className="w-full pt-1 pb-2 pr-5 pl-3 text-sm border-none focus:outline-none" required />
             </div>
           </div>
-
-          <div className="flex items-stretch relative border border-[var(--primary)] rounded-[30px] transition-all duration-200 w-full mb-4">
+          <div className="flex items-stretch relative border border-[var(--primary)] rounded-[30px] transition-all duration-200 w-full mb-2 xl:mb-4">
             <div className="flex items-center pl-4 pr-2">
               <Calendar className="text-[var(--primary)] w-5 h-5" />
             </div>
@@ -81,7 +77,6 @@ Jumlah Tamu: ${value}`;
             </div>
           </div>
         </div>
-
         <div className="flex flex-col xl:flex-row gap-2">
           {/* form tipe penginapan */}
           <div className="flex items-stretch relative border border-[var(--primary)] rounded-[30px] overflow-hidden transition-all duration-200 w-full mb-2 xl:mb-4">
@@ -92,7 +87,7 @@ Jumlah Tamu: ${value}`;
               <label htmlFor="tipepenginapan" className="text-sm text-[var(--primary)] font-medium mt-2 ml-3">
                 Tipe Penginapan
               </label>
-              <select value={selectedRooms} onChange={(e) => setSelectedRooms(e.target.value)} className="border-none focus:outline-none ml-2 mr-5 md:mr-83 pr-6 xl:pr-44 " required>
+              <select value={selectedRooms} onChange={(e) => setSelectedRooms(e.target.value)} className="border-none focus:outline-none ml-2 mr-5 md:mr-80 pr-6 xl:pr-16 " required>
                 <option value="" disabled>
                   Pilih Penginapan Anda
                 </option>
@@ -105,7 +100,6 @@ Jumlah Tamu: ${value}`;
               </select>
             </div>
           </div>
-
           {/* form jumlah tamu */}
           <div className="flex items-stretch relative border border-[var(--primary)] rounded-[30px] overflow-hidden transition-all duration-200 w-full mb-4">
             <div className="flex items-center pl-4 pr-2">
@@ -115,7 +109,7 @@ Jumlah Tamu: ${value}`;
               <label htmlFor="jumlahtamu" className="text-sm text-[var(--primary)] font-medium mt-2 ml-3">
                 Jumlah Tamu
               </label>
-              <input id="jumlahtamu" type="number" min={1} max={100} value={value} onChange={(e) => handleChange(Number(e.target.value))} className="w-full p-3 pt-1 pb-2 text-sm border-none focus:outline-none" required />
+              <input id="jumlahtamu" type="number" min={1} max={100} value={value} onChange={(e) => handleChange(Number(e.target.value))} className="w-full p-3 pt-1 pb-2 md:pr-6 text-sm border-none focus:outline-none" required />
             </div>
           </div>
         </div>

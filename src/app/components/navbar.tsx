@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  //book now
+  //btn book now
   const handleBookNow = () => {
     const pesan = `Halo, saya ingin menanyakan room tipe ...`;
     const url = `https://wa.me/6282188661981?text=${encodeURIComponent(pesan)}`;
@@ -32,16 +32,16 @@ const Navbar = () => {
 
         {/* Menu (Desktop) */}
         <div className="hidden md:flex flex-1 justify-center items-center md:ml-30 xl:ml-110 gap-1">
-          <Link href="#tentang" className="font-bold text-xs lg:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
+          <Link href="#tentang" className="font-bold text-xs xl:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
             Tentang
           </Link>
-          <Link href="#fasilitas" className="font-bold text-xs lg:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
+          <Link href="#fasilitas" className="font-bold text-xs xl:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
             Fasilitas
           </Link>
-          <Link href="#reservasi" className="font-bold text-xs lg:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
+          <Link href="#reservasi" className="font-bold text-xs xl:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
             Reservasi
           </Link>
-          <Link href="#kontak" className="font-bold text-xs lg:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
+          <Link href="#kontak" className="font-bold text-xs xl:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
             Kontak
           </Link>
         </div>
@@ -56,16 +56,16 @@ const Navbar = () => {
       {/* Menu (Mobile Dropdown) */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 flex flex-col space-y-2">
-          <Link href="#tentang" className="font-bold text-xs lg:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
+          <Link href="#tentang" className="font-bold text-xs rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
             Tentang
           </Link>
-          <Link href="#fasilitas" className="font-bold text-xs lg:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
+          <Link href="#fasilitas" className="font-bold text-xs rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
             Fasilitas
           </Link>
-          <Link href="#reservasi" className="font-bold text-xs lg:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
+          <Link href="#reservasi" className="font-bold text-xs rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
             Reservasi
           </Link>
-          <Link href="#kontak" className="font-bold text-xs lg:text-sm rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
+          <Link href="#kontak" className="font-bold text-xs rounded-lg px-5 py-3 text-[var(--primary)] hover:bg-[var(--secondary)]">
             Kontak
           </Link>
         </div>

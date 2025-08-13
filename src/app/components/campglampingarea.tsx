@@ -1,5 +1,4 @@
 import { AlarmSmoke, Bath, Bed, Fan, FlameKindling, Phone } from "lucide-react";
-import Link from "next/link";
 import Carousel from "./carousel";
 
 const CampGlamArea = () => {
@@ -16,7 +15,7 @@ const CampGlamArea = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-start justify-between gap-8 xl:gap-40 md:ml-10 xl:mr-30">
+    <div className="flex flex-col xl:flex-row items-start justify-between gap-8 xl:gap-40 md:ml-10 xl:mr-30">
       <div className="flex flex-col max-w-3xl px-8 md:px-20 xl:px-32">
         <h3 className="text-base md:text-xl xl:text-3xl text-[var(--primary)] underline font-semibold mb-4 mt-12">Camp & Glamping Area</h3>
         <p className="text-base md:text-lg xl:text-xl md:mt-4 xl:mt-8">
@@ -46,7 +45,7 @@ const CampGlamArea = () => {
         <p className="text-base md:text-lg xl:text-xl font-bold italic text-[var(--primary)] mb-4 mt-4">Mulai dari Rp 100.000/ malam</p>
         <button
           onClick={handleBookNow}
-          className="flex items-center gap-4 bg-[var(--primary)] text-[var(--secondary)] font-semibold text-xs lg:text-sm xl:text-lg px-4 lg:px-7 xl:px-9 py-2 justify-center w-full xl:w-[300px] max-w-xl rounded-2xl hover:bg-[var(--primaryhover)] transition"
+          className="flex items-center gap-4 bg-[var(--primary)] text-[var(--secondary)] font-semibold text-xs md:text-sm xl:text-lg px-4 md:px-7 xl:px-9 py-2 justify-center w-full xl:w-[300px] max-w-xl rounded-2xl hover:bg-[var(--primaryhover)] transition"
         >
           <Phone className="size-3 xl:size-7" />
           Book Now
