@@ -17,12 +17,12 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-12 md:px-24 xl:px-32 py-12">
-        <h1 className="text-xl pt-4 md:text-2xl md:pt-40 lg:text-3xl lg:pt-60 xl:text-4xl xl:pt-30 font-bold mb-8">Temukan Surga Tropis Anda di Stira ParADIse Resort</h1>
-        <h4 className="text-sm md:text-base lg:text-lg xl:text-xl font-light mb-4 mt-4">Villa Eksotik & Glamping Ekslusif di jantung destinasi wisata Pantai Alfath Stira ParADIse</h4>
+        <h1 className="text-xl pt-4 md:text-2xl md:pt-40 xl:text-4xl xl:pt-30 font-bold mb-8">Temukan Surga Tropis Anda di Stira ParADIse Resort</h1>
+        <h4 className="text-sm md:text-base xl:text-xl font-light mb-4 mt-4">Villa Eksotik & Glamping Ekslusif di jantung destinasi wisata Pantai Alfath Stira ParADIse</h4>
         <div className="flex flex-col-reverse xl:flex-row flex-wrap justify-center gap-6 mt-8">
           <Link
             href="#fasilitas"
-            className="flex items-center justify-center gap-4 bg-[var(--secondary)] text-[var(--primary)] font-semibold text-xs lg:text-sm xl:text-lg px-8 md:px-24 xl:px-4 py-2 w-full xl:w-[300px] rounded-2xl hover:bg-[var(--secondaryhover)] transition"
+            className="flex items-center justify-center gap-4 bg-[var(--secondary)] text-[var(--primary)] font-semibold text-xs md:text-sm xl:text-lg px-18 md:px-24 xl:px-4 py-2 w-full xl:w-[300px] rounded-2xl hover:bg-[var(--secondaryhover)] transition"
           >
             <button className="flex items-center gap-4">
               <BedDouble className="size-3 xl:size-7" />
@@ -32,7 +32,7 @@ const Hero = () => {
 
           <button
             onClick={handleBookNow}
-            className="flex items-center gap-4 bg-[var(--primary)] text-[var(--secondary)] font-semibold text-xs lg:text-sm xl:text-lg px-8 md:px-24 xl:px-4 py-2 justify-center w-full xl:w-[300px] rounded-2xl hover:bg-[var(--primaryhover)] transition"
+            className="flex items-center gap-4 bg-[var(--primary)] text-[var(--secondary)] font-semibold text-xs md:text-sm xl:text-lg px-8 md:px-24 xl:px-4 py-2 justify-center w-full xl:w-[300px] rounded-2xl hover:bg-[var(--primaryhover)] transition"
           >
             <Phone className="size-3 xl:size-7" />
             Book Now
