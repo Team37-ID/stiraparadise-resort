@@ -119,14 +119,14 @@ Jumlah Tamu: ${value}`;
         <button
           type="button"
           onClick={handleClear}
-          className="flex items-center justify-center gap-4 bg-[var(--secondary)] text-[var(--primary)] font-semibold text-xs lg:text-sm xl:text-lg px-4 md:px-7 xl:px-9 py-2 w-full rounded-2xl hover:bg-[var(--secondaryhover)] transition"
+          className="flex items-center justify-center gap-4 bg-[var(--secondary)] text-[var(--primary)] font-semibold text-xs md:text-sm xl:text-lg px-4 md:px-7 xl:px-9 py-2 w-full rounded-2xl hover:bg-[var(--secondaryhover)] transition"
         >
           <Trash2 className="size-4 xl:size-7" />
           Clear
         </button>
         <button
           onClick={handleSendWA}
-          className="flex items-center gap-4 bg-[var(--primary)] text-[var(--secondary)] font-semibold text-xs lg:text-sm xl:text-lg px-4 md:px-7 xl:px-9 py-2 justify-center w-full  rounded-2xl hover:bg-[var(--primaryhover)] transition"
+          className="flex items-center gap-4 bg-[var(--primary)] text-[var(--secondary)] font-semibold text-xs md:text-sm xl:text-lg px-4 md:px-7 xl:px-9 py-2 justify-center w-full  rounded-2xl hover:bg-[var(--primaryhover)] transition"
         >
           <MessageSquareText className="size-4 xl:size-7" />
           Send On WhatsApp
